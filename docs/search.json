@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html#getting-up",
+    "href": "index.html#getting-up",
+    "title": "My First Presentation",
+    "section": "Getting up",
+    "text": "Getting up\n\nTurn off alarm\nGet out of bed"
+  },
+  {
+    "objectID": "index.html#going-to-sleep",
+    "href": "index.html#going-to-sleep",
+    "title": "My First Presentation",
+    "section": "Going to sleep",
+    "text": "Going to sleep\n\nGet in bed\nCount sheep"
+  },
+  {
+    "objectID": "index.html#line-highlighting",
+    "href": "index.html#line-highlighting",
+    "title": "My First Presentation",
+    "section": "Line Highlighting",
+    "text": "Line Highlighting\n\nHighlight specific lines for emphasis\nIncrementally highlight additional lines\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\nLearn more: Line Highlighting"
+  },
+  {
+    "objectID": "index.html#executable-code",
+    "href": "index.html#executable-code",
+    "title": "My First Presentation",
+    "section": "Executable Code",
+    "text": "Executable Code\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([1, 2, 3])\ny = np.array([2, 4, 60])\nplt.plot(x, y)\nplt.show()"
+  },
+  {
+    "objectID": "index.html#latex-equations",
+    "href": "index.html#latex-equations",
+    "title": "My First Presentation",
+    "section": "Latex Equations",
+    "text": "Latex Equations\n\n\\[\\begin{gather*}\n\\mathcal{N}(x; \\mu, \\sigma) =\n\\dfrac{1}{\\sqrt{2 \\pi \\sigma^2}}\\exp \\left(-\\left(\\dfrac{x - \\mu}{2 \\sigma^2}\\right)\\right)\n\\end{gather*}\\]"
+  },
+  {
+    "objectID": "index.html#column-layout",
+    "href": "index.html#column-layout",
+    "title": "My First Presentation",
+    "section": "Column Layout",
+    "text": "Column Layout\nArrange content into columns of varying widths:\n\n\n\n\n\n\n\n\n\n\nName\nAge\nCity\n\n\n\n\n0\nJohn\n28\nNew York\n\n\n1\nAnna\n35\nParis\n\n\n2\nPeter\n42\nLondon\n\n\n3\nLinda\n45\nSydney"
+  }
+]

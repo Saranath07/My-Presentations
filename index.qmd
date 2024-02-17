@@ -1,0 +1,79 @@
+---
+title: "My First Presentation"
+format: revealjs
+author: Saranath P
+---
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+
+## Line Highlighting
+
+-   Highlight specific lines for emphasis
+-   Incrementally highlight additional lines
+
+``` {.python code-line-numbers="4-5|7|10"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+::: footer
+Learn more: [Line Highlighting](https://quarto.org/docs/presentations/revealjs/#line-highlighting)
+:::
+
+## Executable Code
+
+```{python}
+#| echo: true
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([1, 2, 3])
+y = np.array([2, 4, 60])
+plt.plot(x, y)
+plt.show()
+```
+
+## Latex Equations
+
+::: {.column width="60%"}
+```{=tex}
+\begin{gather*}
+\mathcal{N}(x; \mu, \sigma) = 
+\dfrac{1}{\sqrt{2 \pi \sigma^2}}\exp \left(-\left(\dfrac{x - \mu}{2 \sigma^2}\right)\right) 
+\end{gather*}
+```
+:::
+
+## Column Layout {.smaller}
+
+Arrange content into columns of varying widths:
+
+```{python}
+import pandas as pd
+
+data = {
+    'Name': ['John', 'Anna', 'Peter', 'Linda'],
+    'Age': [28, 35, 42, 45],
+    'City': ['New York', 'Paris', 'London', 'Sydney']
+}
+df = pd.DataFrame(data)
+
+df
+```
